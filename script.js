@@ -212,10 +212,26 @@ document.addEventListener("DOMContentLoaded", () => {
       btn.disabled = true;
       btn.innerText = "Sending...";
       statusMsg.style.opacity = "1";
-      fetch(FORMSPREE_URL, {
+      const formData = new FormData(this);
+      const data = Object.fromEntries(formData.entries());
+
+      // Use the direct URL for local testing, and the secure /api endpoint for production.
+      const isLocal =
+        window.location.hostname === "localhost" ||
+        window.location.hostname === "127.0.0.1" ||
+        window.location.protocol === "file:";
+
+      const endpoint = isLocal
+        ? "" // Add your local Formspree URL here for testing
+        : "/api/contact";
+
+      fetch(endpoint, {
         method: "POST",
-        body: new FormData(this),
-        headers: { Accept: "application/json" },
+        body: JSON.stringify(data),
+        headers: {
+          Accept: "application/json",
+          "Content-Type": "application/json",
+        },
       })
         .then((response) => {
           if (response.ok) {

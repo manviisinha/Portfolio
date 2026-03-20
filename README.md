@@ -23,13 +23,13 @@ A high-end editorial portfolio project created by **Manvi Sinha**, an aspiring t
 - **Editorial Design**: Large typography and clean layouts inspired by modern magazines.
 - **GSAP Animations**: Smooth scroll-triggered animations and high-depth parallax effects.
 - **Interactive AI Assistant**: A custom-built chatbot that shares information about Manvi's studies and work.
-- **Modular Structure**: Project is organized into clean `final.html`, `style.css`, and `script.js` files.
+- **Modular Structure**: Project is organized into clean `index.html`, `style.css`, and `script.js` files.
 
 ## 📁 Project Structure
-- `final.html`: Primary structure of the portfolio.
+- `index.html`: Primary structure of the portfolio.
 - `style.css`: All layout and animation styles.
 - `script.js`: Interactive logic and animation triggers.
-- `/images`: Organized directory for all visual assets.
+- `/images`: Organized directory for all visual assets and project screenshots.
 
 ---
 
