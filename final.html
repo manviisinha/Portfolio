@@ -1,0 +1,470 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Manvi Sinha | Portfolio</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="config.js"></script> <!-- Added config script link -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Montserrat:wght@300;600;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="cursor"></div>
+
+    <div class="pill-nav-container">
+      <nav class="pill-nav">
+        <a href="#" class="nav-icon-btn">
+          <svg
+            width="20"
+            height="20"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            viewBox="0 0 24 24"
+          >
+            <path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" />
+            <polyline points="9 22 9 12 15 12 15 22" />
+          </svg>
+        </a>
+
+        <button class="menu-toggle" id="menu-toggle">☰</button>
+
+        <div class="nav-items">
+          <a href="#about" class="nav-link"
+            ><strong>About</strong><span>Identity</span></a
+          >
+          <a href="#skills" class="nav-link"
+            ><strong>Skills</strong><span>Stack</span></a
+          >
+          <a href="#projects" class="nav-link"
+            ><strong>Projects</strong><span>Works</span></a
+          >
+          <a href="#contact" class="nav-link"
+            ><strong>Contact</strong><span>Collab</span></a
+          >
+        </div>
+      </nav>
+    </div>
+
+    <section class="hero">
+      <h1 id="p-text">PORTFOLIO</h1>
+
+      <div class="side-img left-side">
+        <img src="images/5ede4947b760540004f2c5e2.png" alt="decor-left" />
+      </div>
+
+      <div class="hero-img-wrapper">
+        <img
+          src="images/5ede49f9b760540004f2c5e7.png"
+          alt="Manvi Sinha"
+          id="hero-img"
+        />
+      </div>
+
+      <div class="side-img right-side">
+        <img
+          src="images/Demon-Slayer-Character-PNG-Image-File.png"
+          alt="decor-right"
+        />
+      </div>
+
+      <div class="editorial-name">
+        <span class="name-left">MANVI</span>
+        <span class="name-right">SINHA</span>
+      </div>
+
+      <div class="hero-footer-info">
+        <!-- <span>Full Stack Developer</span><br>
+    <span>AI Specialist</span> -->
+      </div>
+    </section>
+
+    <div class="main-content">
+      <section class="block" id="about">
+        <div class="about-layout">
+          <div class="about-text">
+            <h2>ABOUT ME</h2>
+            <p style="font-size: 1.2rem; line-height: 1.8">
+              Hey, I’m Manvi, an Information Technology student at IGDTUW. My
+              journey into tech started with curiosity experimenting with web
+              development, playing around with designs, and building small
+              things just to see how they worked. Over time, that curiosity grew
+              into a deeper interest in problem-solving, backend logic, and how
+              AI and machine learning can shape real-world experiences. Lately,
+              I’ve been exploring web development and ML, trying to connect
+              technology with people in meaningful ways. I’m still learning,
+              still building, and always curious about what’s next.
+            </p>
+          </div>
+          <div class="image-holder">
+            <img
+              src="images/625257409_1916195589103675_4631289642695229774_n.jpg"
+              alt="Manvi Sinha"
+            />
+          </div>
+        </div>
+      </section>
+
+      <section class="block dark" id="skills">
+        <h2>TECHNICAL STACK</h2>
+        <div class="skills-matrix">
+          <div class="skill-group" data-skill="fullstack">
+            <h3>Full Stack</h3>
+            <div class="tag-cloud">
+              <span class="tag">React</span><span class="tag">Next.js</span>
+              <!-- <span class="tag">TypeScript</span> -->
+              <span class="tag">Tailwind CSS</span
+              ><span class="tag">HTML/CSS</span><span class="tag">Node.js</span>
+              <span class="tag">Express.js</span
+              ><span class="tag">MongoDB</span>
+              <!-- <span class="tag">PostgreSQL</span> -->
+            </div>
+          </div>
+          <div class="skill-group" data-skill="fullstack">
+            <h3>AI & Learning</h3>
+            <div class="tag-cloud">
+              <span class="tag">Python</span><span class="tag">NumPy</span
+              ><span class="tag">Pandas</span>
+              <span class="tag">Scikit-learn</span
+              ><span class="tag">TensorFlow</span><span class="tag">Keras</span>
+              <!-- <span class="tag">PyTorch</span><span class="tag">OpenCV</span
+              >
+              <span class="tag">Hugging Face</span> -->
+            </div>
+          </div>
+          <!-- <div class="skill-group"data-skill="fullstack">
+            <h3>Ops & Cloud</h3>
+            <div class="tag-cloud">
+              <span class="tag">FastAPI</span><span class="tag">Flask</span
+              ><span class="tag">REST APIs</span> <span class="tag">Docker</span
+              ><span class="tag">CI/CD</span><span class="tag">MLflow</span>
+              <span class="tag">AWS EC2</span><span class="tag">Linux</span>
+            </div>
+          </div> -->
+          <div class="skill-group" data-skill="fullstack">
+            <h3>Tools</h3>
+            <div class="tag-cloud">
+              <span class="tag">Git</span><span class="tag">GitHub</span
+              ><span class="tag">VS Code</span> <span class="tag">Vercel</span>
+              <span class="tag">GitHub</span>
+              <span class="tag">Figma</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="block" id="projects">
+        <h2>FEATURED PROJECTS</h2>
+
+        <div class="projects-scroll">
+          <div class="projects-track">
+            <div class="project-frame">
+              <img
+                src="https://res.cloudinary.com/dz69xznw7/image/upload/c_crop,w_865,h_865,g_auto/v1770463591/igdtuwhub_vxhu5v.png"
+              />
+
+              <div class="project-overlay">
+                <h3>IGDTUWhub</h3>
+                <p>
+                  IGDTUWHub is a modern, responsive platform for IGDTUW
+                  students, bringing study resources, productivity tools, and
+                  fun features together in one place to make campus life simpler
+                  and more organized.
+                </p>
+                <span>Front-end</span>
+
+                <div class="project-links">
+                  <a
+                    href="https://github.com/igdtuww/IGDTUWhub"
+                    target="_blank"
+                  >
+                    GitHub
+                  </a>
+                  <a
+                    href="https://igdtuww.github.io/IGDTUWhub/"
+                    target="_blank"
+                  >
+                    Live
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div class="project-frame">
+              <img src="https://i.postimg.cc/1tYbCfWF/Neurora.png" />
+
+              <div class="project-overlay">
+                <h3>Neurora</h3>
+                <p>
+                  Neuralis is an AI-powered health monitoring dashboard that
+                  simplifies complex medical data into clear, actionable
+                  insights. It analyzes lab reports, detects medication
+                  conflicts, and provides doctor availability with intelligent
+                  assistance.
+                </p>
+                <span>Full Stack</span>
+
+                <div class="project-links">
+                  <a
+                    href="https://github.com/manviisinha/neuralis-dashboard"
+                    target="_blank"
+                  >
+                    GitHub
+                  </a>
+                  <a href="https://neurora-ai.vercel.app/" target="_blank">
+                    Live
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div class="project-frame">
+              <img src="https://i.postimg.cc/XqtcHfMS/1000095946.jpg" />
+
+              <div class="project-overlay">
+                <h3>The Grand</h3>
+                <p>
+                  Ultra-premium fine-dining reservation system with a React
+                  frontend and a Twilio-powered Python WhatsApp bot. Features
+                  minimalist, typography design, automated PDF receipts via
+                  WhatsApp concierge, and seamless Google Sheets booking
+                  integration.
+                </p>
+                <span>Full Stack </span>
+
+                <div class="project-links">
+                  <a
+                    href="https://github.com/manviisinha/The-Grand"
+                    target="_blank"
+                  >
+                    GitHub
+                  </a>
+                  <a href="https://the-grand-sand.vercel.app/" target="_blank">
+                    Live
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div class="project-frame">
+              <img src="https://i.postimg.cc/d1NVKnVw/1000095967.jpg" />
+
+              <div class="project-overlay">
+                <h3>PULSE</h3>
+                <p>
+                  Live News Intelligence. A stunning vanilla JS dashboard
+                  displaying real-time global news streams, equipped with an
+                  embedded Llama-3 conversational assistant that intelligently
+                  analyzes the feeds you are reading.
+                </p>
+                <span>Api Integration</span>
+
+                <div class="project-links">
+                  <a
+                    href="https://github.com/manviisinha/PULSE"
+                    target="_blank"
+                  >
+                    GitHub
+                  </a>
+                  <a
+                    href="https://my-project-plum-seven.vercel.app/"
+                    target="_blank"
+                  >
+                    Live
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="block dark" id="contact">
+        <div class="contact-grid">
+          <div>
+            <h2>LET'S<br />CONNECT</h2>
+            <p style="opacity: 0.8; font-size: 1.1rem; margin-bottom: 30px">
+              Ready to bring a visionary project to life? Let's discuss how my
+              tech stack can solve your next challenge.
+            </p>
+
+            <div class="contact-details">
+              <a
+                href="mailto:manvisinhan4500@gmail.com"
+                class="detail-item"
+                id="email-link"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="20"
+                  height="20"
+                  fill="currentColor"
+                  viewBox="0 0 256 256"
+                >
+                  <path
+                    d="M224,48H32a16,16,0,0,0-16,16V192a16,16,0,0,0,16,16H224a16,16,0,0,0,16-16V64A16,16,0,0,0,224,48Zm-8,16L128,133.06,40,64ZM224,192H32V82.58l91.45,71.13a8,8,0,0,0,9.1,0L224,82.58V192Z"
+                  ></path>
+                </svg>
+                manvisinhan4500@gmail.com
+              </a>
+              <a href="tel:+919315742832" class="detail-item">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="20"
+                  height="20"
+                  fill="currentColor"
+                  viewBox="0 0 256 256"
+                >
+                  <path
+                    d="M222.37,158.46l-47.11-21.11-.13-.06a16,16,0,0,0-15.17,1.4,8.12,8.12,0,0,0-.75.56L143.16,155.3c-25.41-15-45.54-35.13-60.54-60.54l16.05-16.05a8.12,8.12,0,0,0,.56-.75,16,16,0,0,0,1.34-15.3l-.06-.13L79.4,15.42A16,16,0,0,0,60.38,5.09L33.82,10.4a16,16,0,0,0-12.8,12.86C14.77,80.93,33,141.29,78.25,186.54s105.61,63.48,163.28,57.23a16,16,0,0,0,12.86-12.8l5.31-26.56a16,16,0,0,0-10.33-19.14l-7-3.11ZM225.45,227.73c-53.11,5.76-111.45-12.81-153.2-54.56S30.51,78.66,36.27,25.55L62.83,20.24l21.11,47.11L67.1,84.19a8,8,0,0,0-1.32,8.11c16.32,32.42,42.87,59,75.29,75.3a8,8,0,0,0,8.12-1.31l16.84-16.84,47.11,21.11Z"
+                  ></path>
+                </svg>
+                +91 9315742832
+              </a>
+
+              <div class="social-links-row">
+                <a
+                  href="https://www.instagram.com/manvisinhha/"
+                  target="_blank"
+                  class="social-circle"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="22"
+                    height="22"
+                    fill="currentColor"
+                    viewBox="0 0 256 256"
+                  >
+                    <path
+                      d="M128,80a48,48,0,1,0,48,48A48.05,48.05,0,0,0,128,80Zm0,80a32,32,0,1,1,32-32A32,32,0,0,1,128,160ZM172,32H84A52.06,52.06,0,0,0,32,84v88a52.06,52.06,0,0,0,52,52h88a52.06,52.06,0,0,0,52-52V84A52.06,52.06,0,0,0,172,32Zm36,140a36,36,0,0,1-36,36H84a36,36,0,0,1-36-36V84A36,36,0,0,1,84,48h88a36,36,0,0,1,36,36ZM192,72a12,12,0,1,1-12-12A12,12,0,0,1,192,72Z"
+                    ></path>
+                  </svg>
+                </a>
+
+                <a
+                  href="https://x.com/Manviisinha"
+                  target="_blank"
+                  class="social-circle"
+                >
+                  <svg
+                    width="18"
+                    height="18"
+                    viewBox="0 0 1200 1227"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M714.163 519.284L1160.89 0H1055.03L662.322 456.453L352.568 0H0L468.492 681.821L0 1226.37H105.866L520.308 744.654L847.432 1226.37H1200L714.137 519.284H714.163ZM574.187 682.016L526.748 614.112L149.791 74.012H312.39L615.358 507.245L662.797 575.149L1055.08 1136.78H892.476L574.187 682.042V682.016Z"
+                      fill="currentColor"
+                    />
+                  </svg>
+                </a>
+
+                <a
+                  href="https://www.linkedin.com/in/manviiiisinhhh/"
+                  target="_blank"
+                  class="social-circle"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="22"
+                    height="22"
+                    fill="currentColor"
+                    viewBox="0 0 256 256"
+                  >
+                    <path
+                      d="M216,24H40A16,16,0,0,0,24,40V216a16,16,0,0,0,16,16H216a16,16,0,0,0,16-16V40A16,16,0,0,0,216,24Zm0,192H40V40H216V216ZM96,112v64a8,8,0,0,1-16,0V112a8,8,0,0,1,16,0Zm-8-32a12,12,0,1,1,12-12A12,12,0,0,1,88,80Zm96,32v64a8,8,0,0,1-16,0V140a20,20,0,0,0-40,0v36a8,8,0,0,1-16,0V112a8,8,0,0,1,16,0v8.69A35.84,35.84,0,0,1,184,112Z"
+                    ></path>
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <form
+            class="contact-form"
+            id="portfolio-contact-form"
+            method="POST"
+          >
+            <input
+              type="text"
+              id="user_name"
+              name="user_name"
+              placeholder="FULL NAME"
+              required
+            />
+            <input
+              type="email"
+              id="user_email"
+              name="user_email"
+              placeholder="EMAIL ADDRESS"
+              required
+            />
+            <textarea
+              rows="4"
+              id="message"
+              name="message"
+              placeholder="HOW CAN I HELP?"
+              required
+            ></textarea>
+            <button type="submit" class="send-btn" id="submit-button">
+              Send Message
+            </button>
+            <div id="form-status"></div>
+          </form>
+        </div>
+      </section>
+    </div>
+    <div id="chatbot-container">
+      <div id="chat-window">
+        <div class="chat-header">
+          <span>AI Assistant</span>
+          <button id="close-chat">&times;</button>
+        </div>
+        <div id="chat-body">
+          <div class="bot-msg">
+            Hi! I'm Manvi's AI. How can I help you today?
+          </div>
+        </div>
+        <div class="chat-footer">
+          <input
+            type="text"
+            id="chat-input"
+            placeholder="Ask me about my projects..."
+          />
+          <button id="send-chat">
+            <svg
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <path d="M22 2L11 13M22 2l-7 20-4-9-9-4 20-7z" />
+            </svg>
+          </button>
+        </div>
+      </div>
+      <button id="chat-trigger">
+        <svg
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+        >
+          <path
+            d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"
+          />
+        </svg>
+      </button>
+    </div>
+
+    <script src="config.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
